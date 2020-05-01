@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding:0px;
+}
+
+.h1Middle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin-top:16px!important;
+    text-align:center!important;
+}
+
+.headerTextBold{
+    font-weight:bold;
+    font-size:larger;
+    color: black;
+    padding:20px;
+    background-color:silver;
+}
+
+.headerTextLight{
+    font-weight:lighter;
+    font-size:larger;
+    padding:20px;
+    border:solid;
+    border-color:silver;
+}
+
+img {
+    width: 100%;
+    opacity: 0.75;
+}
+
+p {
+    text-indent:2%;
+}
+
+body{
+    background-color:silver;
+}
