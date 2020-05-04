@@ -2,14 +2,51 @@
 <html>
 <head>
     <title>David Naranjo Project0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <!--Used @media to change background color to silver for smaller screens-->
+    <style>
+
+        body {
+            background-color: white;
+        }
+
+        @media (max-width: 992px) {
+            body {
+                background-color: silver;
+            }
+        }
+    </style>
 </head>
 
-    <body>
+<body>
+    <!--Navigation bar using Boostrap4 component Navbar-->
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand">Project0</a>
+                <ul class="nav">
+                    <li class="divider-vertical"><a href="index.html">Home</a></li>
+                    <li class="divider-vertical"><a href="career.html">Career</a></li>
+                    <li class="active divider-vertical"><a href="education.html">Education</a></li>
+                    <li class="divider-vertical"><a href="additionalInfo.html">Additonal Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Header using an image tag-->
+        <div id="homeContainer">
+            <header>
+                <img class="headerImg" src="educationImg.jpg" />
+                <!--Used bootstrap columns for reactive layout-->
+                <div class="row">
+                    <div class="col-sm headerTextBold">Self</div>
+                    <div class="col-sm headerTextLight"> Development</div>
+                </div>
+            </header>
+        </div>
         <div>
-            <h1>Professional Development</h1>
-            <h2>Education</h2>
+            <h3>Education</h3>
             <!---All paragraphs will have the CSS property "text-indent" using the element selector "p"-->
             <p>
                 I began my educational journey in the Air Force. Being Regionally accredited, I was awarded my Associate of Applied Science in Aviation Maintenance
@@ -21,7 +58,7 @@
                 retirement, my new employer required me to complete my Security+ certification, which I earned in 2019. I am now finishing up my final courses left for in
                 my Masters degree and am projected to graduate in the Spring of 2021.
             </p>
-            <h2>Degrees</h2>
+            <h3>Degrees</h3>
             <!--The following 2 tables will be styled the same using class .tables-->
             <table class="tables">
                 <tr>
@@ -52,7 +89,7 @@
             </table>
 
             <!---Table listing Certifications and Cerificates-->
-            <h2>Certifcations/Certificates</h2>
+            <h3>Certifcations/Certificates</h3>
             <table class="tables">
                 <tr>
                     <th>Certifications/Certificates</th>
@@ -71,18 +108,6 @@
                 </tr>
             </table>
         </div>
-        <!--The navPanes for all of the pages will be styled the same using the class "navPane"-->
-        <div class="navPane">
-            <h2>Navigation</h2>
-            <div>
-                <a href="index.html">Home Page</a>
-            </div>
-            <div>
-                <a href="career.html">Career</a>
-            </div>
-            <div>
-                <a href="additionalInfo.html">Additional Information</a>
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>

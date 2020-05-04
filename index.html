@@ -1,46 +1,62 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>David Naranjo Project0</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+<head>
+    <title>David Naranjo Project0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <!--Used @media to change background color to silver for smaller screens-->
+    <style>
+        body {
+            background-color: white;
+        }
+
+        @media (max-width: 992px) {
+            body {
+                background-color: silver;
+            }
+        }
+    </style>
+</head>
+
     <body>
-        <!--Area at the very top of page-->
-        <h5 class="topOfPage"><span style="font-weight:bold">Web Page by</span> David Naranjo</h5>
-        <!--Header-->
-        <div id="homeContainer">
-            <header>
-                <img class="headerImg" src="homeImg.jpg" />
-                <div class="h1Middle">
-                    <h1><span class="headerTextBold">CS50W</span><span class="headerTextLight"> Project0</span></h1>
+        <div class="container">
+            <!--Navigation bar using Boostrap4 component Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="brand">Project0</a>
+                    <ul class="nav">
+                        <li class="active divider-vertical"><a href="index.html">Home</a></li>
+                        <li class="divider-vertical"><a href="career.html">Career</a></li>
+                        <li class="divider-vertical"><a href="education.html">Education</a></li>
+                        <li class="divider-vertical"><a href="additionalInfo.html">Additonal Information</a></li>
+                    </ul>
                 </div>
-            </header>
-        </div>
-        <div>
-            <h3>About</h3>
-            <!---All paragraphs will have the CSS property "text-indent" using the element selector "p"-->
-            <p>
-                To begin, I would like to thank you for visiting my web page. I created this web page as part of my Project0 for HarvardX's CS50W course.
-                The contents of this web page gives a little information of my career and professional development.
-            </p>
-            <p>
-                I have created a navigation pane with links for ease of navigation. The "Career" page gives a snapshot of my career choices and where I am today.
-                In the "Professional Development" page I list my education, cerifications, and certifcates that have been awarded to me. Lastly, the "Additional Information"
-                page was created for the instructors to view my web site's DOM as well as a link to view README.md file. I look forward to hearing your feedback!
-            </p>
-        </div>
-        <!--The navPanes for all of the pages will be styled the same using the class "navPane"-->
-        <div class="navPane">
-            <h3>Navigation</h3>
-            <div>
-                <a href="career.html">Career</a>
+            </div>
+
+            <!--Header using an image tag-->
+            <div id="homeContainer">
+                <header>
+                    <img class="headerImg" src="homeImg.jpg" />
+                    <!--Used bootstrap columns for reactive layout-->
+                    <div class="row">
+                        <div class="col-sm headerTextBold">CS50W</div>
+                        <div class="col-sm headerTextLight"> Project0</div>
+                    </div>
+                </header>
             </div>
             <div>
-                <a href="education.html">Professional Development</a>
-            </div>
-            <div>
-                <a href="additionalInfo.html">Additional Information</a>
+                <h3>About this web site</h3>
+                <!---All paragraphs will have the CSS property "text-indent" using the element selector "p"-->
+                <p>
+                    To begin, I would like to thank you for visiting my web page. I created this web page as part of my Project0 for HarvardX's CS50W course.
+                    The contents of this web page gives a little information of my career and professional development.
+                </p>
+                <p>
+                    I have created a navigation pane with links for ease of navigation. The "Career" page gives a snapshot of my career choices and where I am today.
+                    In the "Professional Development" page I list my education, cerifications, and certifcates that have been awarded to me. Lastly, the "Additional Information"
+                    page was created for the instructors to view my web site's DOM as well as a link to view README.md file. I look forward to hearing your feedback!
+                </p>
             </div>
         </div>
     </body>

@@ -1,3 +1,4 @@
+/*ID Selector*/
 #homeContainer {
     position: relative;
     text-align: center;
@@ -5,18 +6,22 @@
     padding:0px;
 }
 
-.h1Middle {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    margin-top:16px!important;
-    text-align:center!important;
+/*Class selectors*/
+
+.brand {
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.divider-vertical {
+    padding-left:20px;
 }
 
 .headerTextBold{
     font-weight:bold;
-    font-size:larger;
+    font-size:5vw;
     color: black;
     padding:20px;
     background-color:silver;
@@ -24,33 +29,36 @@
 
 .headerTextLight{
     font-weight:lighter;
-    font-size:larger;
-    padding:20px;
-    border:solid;
-    border-color:silver;
-}
-
-.tables, ol ~ tr, ol ~ td {
-    border:solid;
-}
-
-.topOfPage {
+    font-size:5vw;
     padding:20px;
 }
 
+.row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 16px !important;
+    text-align: center !important;
+}
+
+.tables {
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+}
+
+/*Element Selectors*/
 img {
     width: 100%;
-    opacity: 0.75;
 }
 
 p {
     text-indent:2%;
 }
 
-body{
-    background-color:silver;
-}
-
+/*All child tags of parent tag selector*/
 div > h3 {
     position: relative;
     margin-left:40%;
@@ -60,6 +68,12 @@ div > h3 {
     color: black;
     text-align: center;
     padding: 20px;
-    border-bottom:solid;
-    border-bottom-color: black;
+}
+
+/*All tags that follow another tag selectors*/
+table tr, tr th, tr td {
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    border: 1px solid;
 }

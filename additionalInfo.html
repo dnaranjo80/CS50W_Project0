@@ -2,35 +2,56 @@
 <html>
 <head>
     <title>David Naranjo Project0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <!--Used @media to change background color to silver for smaller screens-->
+    <style>
+
+        body {
+            background-color: white;
+        }
+
+        @media (max-width: 992px) {
+            body {
+                background-color: silver;
+            }
+        }
+    </style>
 </head>
 
-    <body>
+<body>
+    <!--Navigation bar using Boostrap4 component Navbar-->
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand">Project0</a>
+                <ul class="nav">
+                    <li class="divider-vertical"><a href="index.html">Home</a></li>
+                    <li class="divider-vertical"><a href="career.html">Career</a></li>
+                    <li class="divider-vertical"><a href="education.html">Education</a></li>
+                    <li class="active divider-vertical" style="padding-left:20px"><a href="additionalInfo.html">Additonal Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Header using an image tag-->
+        <div id="homeContainer">
+            <header>
+                <img class="headerImg" src="additionalInfoImg.jpg" />
+                <!--Used bootstrap columns for reactive layout-->
+                <div class="row">
+                    <div class="col-sm headerTextBold">Additional</div>
+                    <div class="col-sm headerTextLight"> Info</div>
+                </div>
+            </header>
+        </div>
         <div>
-            <h1>Additional Information</h1>
-            <h2>For the Instructors</h2>
-            <!---All paragraphs will have the CSS property "text-indent" using the element selector "p"-->
-            <p>
-                Put in here whatever you write in the README.md file
-            </p>
-            <img src="IMG_4216.jpg" width="25%">
+            <h3>Web Pages' DOM</h3>
+            <!---Insert DOM graphs for each web site and style using Bootstrap Matrix-->
         </div>
         <div>
             <a href="README.md" target="_blank">Click here to view the README.md file about this Web page</a>
         </div>
-        <!--The navPanes for all of the pages will be styled the same using the class "navPane"-->
-        <div class="navPane">
-            <h2>Navigation</h2>
-            <div>
-                <a href="index.html">Home Page</a>
-            </div>
-            <div>
-                <a href="career.html">Career</a>
-            </div>
-            <div>
-                <a href="education.html">Professional Development</a>
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>

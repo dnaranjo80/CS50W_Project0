@@ -2,14 +2,52 @@
 <html>
 <head>
     <title>David Naranjo Project0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <!--Used @media to change background color to silver for smaller screens-->
+    <style>
+
+        body {
+            background-color: white;
+        }
+
+        @media (max-width: 992px) {
+            body {
+                background-color: silver;
+            }
+        }
+    </style>
 </head>
 
-    <body>
+<body>
+    <div class="container">
+        <!--Navigation bar using Boostrap4 component Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand">Project0</a>
+                <ul class="nav">
+                    <li class="divider-vertical"><a href="index.html">Home</a></li>
+                    <li class="active divider-vertical"><a href="career.html">Career</a></li>
+                    <li class="divider-vertical"><a href="education.html">Education</a></li>
+                    <li class="divider-vertical"><a href="additionalInfo.html">Additonal Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Header using an image tag-->
+        <div id="homeContainer">
+            <header>
+                <img class="headerImg" src="careerImg.jpg" />
+                <!--Used bootstrap columns for reactive layout-->
+                <div class="row">
+                    <div class="col-sm headerTextBold">Career</div>
+                    <div class="col-sm headerTextLight"> History</div>
+                </div>
+            </header>
+        </div>
         <div>
             <h1>Career History</h1>
-            <h2>USAF</h2>
+            <h3>USAF</h3>
             <!---All paragraphs will have the CSS property "text-indent" using the element selector "p"-->
             <p>
                 Growing up I had two career aspirations - computers and aviation maintenance. After High School there were no online courses available
@@ -21,6 +59,7 @@
                 Japan, 3 years in California, and the rest in my home state of Texas, with a temporary duty locations and a deployment to Iraq in between.
             </p>
             <h3>Duty Locations</h3>
+            <!--Ordered List-->
             <ol>
                 <li>Lackland AFB Texas, Bootcamp, 1999</li>
                 <li>Sheppard AFB Texas, Technical Training, 2000</li>
@@ -31,12 +70,13 @@
                 <li>Dyess AFB Texas, Jet Engine Superintendent, 2013-2019</li>
             </ol>
             <h3>Significant Decorations</h3>
+            <!--Un-ordered list-->
             <ul>
-                <li>X1 Meritorious Serive Medal</li>
+                <li>X1 Meritorious Serivce Medal</li>
                 <li>X3 Air Force Commendation Medal</li>
                 <li>X2 Air Force Achievement Medal</li>
             </ul>
-            <h2>Present</h2>
+            <h3>Present Day Career</h3>
             <p>
                 Now that I have retired and completed my education, I can now persue my second career aspiraion - computers. I was hired on by a water utilities
                 company and was given the position of Applications Adminsitrator. I oversee applications that deal with water management and telemetry systems.
@@ -44,18 +84,6 @@
                 the opportunity to chase both career aspirations I had as a teen.
             </p>
         </div>
-        <!--The navPanes for all of the pages will be styled the same using the class "navPane"-->
-        <div class="navPane">
-            <h2>Navigation</h2>
-            <div>
-                <a href="index.html">Home Page</a>
-            </div>
-            <div>
-                <a href="education.html">Professional Development</a>
-            </div>
-            <div>
-                <a href="additionalInfo.html">Additional Information</a>
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
